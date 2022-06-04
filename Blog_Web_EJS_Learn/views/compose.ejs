@@ -1,0 +1,11 @@
+<%- include partials/header.ejs -%>
+
+    <h1> Compose </h1>
+    <form class="" action="/compose" method="post">
+        <label for="newJournalTitle">Title</label> <br>
+        <input style="min-width: 100%" class="form-control" type="text" name="postTitle" autocomplete="off" autofocus> <br>
+        <label for="newJournal">Post</label> <br>
+        <textarea rows="5" style="min-width: 100%" class="form-control" type="text" name="postBody" placeholder="Write your journal today." autocomplete="off"></textarea> <br>
+        <button class="btn btn-primary" type="submit" name="button">Publish</button>
+    </form>
+<%- include partials/footer.ejs -%>
